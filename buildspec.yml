@@ -1,0 +1,23 @@
+version: 0.2
+phases:
+  install:
+    commands:
+      - yum install -y tree
+  build:
+    commands:
+      - node -v
+      - npm install react-scripts
+      - npm install .
+      - npm run build
+      - ls -ltrha
+      - pwd
+      - ls -ltrha build
+cache:
+  paths:
+      - '/root/.npm/**/*' 
+artifacts:
+  files:
+    - build/**/*
+    - build/**
+    - appspec.yml
+    - transfer.sh
