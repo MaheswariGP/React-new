@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files: 
   - source: /
-    destination: /usr/local/codedeploy/react-app-poc
+    destination: /usr/local/codedeploy/react-app-m
 hooks:
   AfterInstall:
     - location: ./transfer.sh

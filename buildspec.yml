@@ -3,7 +3,6 @@ phases:
   build:
     commands:
       - node -v
-      - npm install react-scripts
       - npm install .
       - npm run build
       - ls -ltrha
